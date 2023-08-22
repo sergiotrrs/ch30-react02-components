@@ -29,4 +29,13 @@ const Navbar = () => {
   )
 }
 
-export { Navbar };
+const Footer = () => {
+    return (
+        <>
+            <p>Derechos no reservados 2023.</p>
+            <p>Lo que está en México, pertenece a los Mexicanos</p>
+        </>
+    )
+}
+
+export { Navbar, Footer };

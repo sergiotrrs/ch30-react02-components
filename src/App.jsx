@@ -2,7 +2,7 @@
 import './App.css';
 import Generation from './components/greeting/generation';
 import Greeting from './components/greeting/greeting';
-import { Navbar } from './components/navbar/navbar';
+import { Footer, Navbar } from './components/navbar/navbar';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Greeting />
       <Generation />
-      {/*  footer */}
+      <Footer />
     </div>
   );
 }
