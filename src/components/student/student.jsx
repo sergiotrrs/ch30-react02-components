@@ -13,14 +13,14 @@ const studentName = "Tania";
  { name, url} = props;
 
 */
-const Student = ( { name, url, isGraduate } ) => {
+const Student = ( { info } ) => {
   
   return (
     <>
-      <a href={ url } target="_blank">
-        <h4> { name } </h4>
+      <a href={ info.url } target="_blank">
+        <h4> { info.name } </h4>
       </a>
-      <p> Ex-alumno:{ isGraduate ? " Sí " : " No "}   </p>
+      <p> Ex-alumno:{ info.isGraduate ? " Sí " : " No "}   </p>
 
     </>
   );
