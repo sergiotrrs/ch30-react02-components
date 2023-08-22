@@ -23,6 +23,18 @@ const studentsInfo = [
     url: "https://www.linkedin.com/in/antonio-maldonado-pinzon-4aaa93221/",
     isGraduate: false,
   },
+  {
+    id: 5,
+    name: "Maria Fernanda",
+    url: "",
+    isGraduate: false,
+  },
+  {
+    id: 6,
+    name: "Felipe",
+    url: "",
+    isGraduate: true,
+  },
 ];
 
 
