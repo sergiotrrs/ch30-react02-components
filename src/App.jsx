@@ -2,11 +2,12 @@
 import './App.css';
 import Generation from './components/greeting/generation';
 import Greeting from './components/greeting/greeting';
+import { Navbar } from './components/navbar/navbar';
 
 function App() {
   return (
     <div className="App">
-      {/*  Agregar NavBar */}
+      <Navbar />
       <Greeting />
       <Generation />
       {/*  footer */}
