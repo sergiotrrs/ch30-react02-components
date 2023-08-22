@@ -6,8 +6,10 @@ import Greeting from './components/greeting/greeting';
 function App() {
   return (
     <div className="App">
+      {/*  Agregar NavBar */}
       <Greeting />
       <Generation />
+      {/*  footer */}
     </div>
   );
 }
