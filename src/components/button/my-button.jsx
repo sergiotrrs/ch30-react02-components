@@ -1,10 +1,15 @@
 import { useEffect } from "react";
 
-
 const buttonStyle = {
-    color:"red", 
-    fontFamily:"verdana", 
-    fontSize:18  
+  color: "red",
+  fontFamily: "verdana",
+  fontSize: 18,
+};
+
+const resetStyle = {
+  color: "green",
+  fontFamily: "calibri",
+  fontSize: 24,
 };
 
 export const MyButton = ({ onClick: handleOnClick, children }) => {
@@ -30,7 +35,12 @@ export const MyButton = ({ onClick: handleOnClick, children }) => {
 
   return (
     <>
-      <button onClick={handleOnClick} style= { buttonStyle  }  >{children}</button>
+      <button
+        onClick={handleOnClick}
+        style= {children === "Reset" ? resetStyle : buttonStyle}
+      >
+        {children}
+      </button>
     </>
   );
 };
