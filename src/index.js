@@ -7,6 +7,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import CssBaseline from "@mui/material/CssBaseline";
+import Container from "@mui/material/Container";
 
 /*
 React.StrictMode: Componente de React que se utiliza en el desarrollo
@@ -18,6 +19,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <CssBaseline />
-    <App />
+    <Container  maxWidth="lg">
+      <App />
+    </Container>
   </React.StrictMode>
 );
