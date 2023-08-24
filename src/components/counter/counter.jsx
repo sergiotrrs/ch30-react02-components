@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { MyButton } from "../button/my-button";
-import "./counter.css";
+
+import Button from "@mui/material/Button";
+import ButtonGroup from "@mui/material/ButtonGroup";
 
 let maxValue = 0;
 
@@ -36,10 +38,21 @@ export const Counter = () => {
   return (
     <>
       <p className="title-counter">Contador: {counterValue}</p>
-      <div className = "buttons-container">
-        <MyButton className="button-decrement" onClick={handleDecrement}>Decrementar</MyButton>
+      <div className="buttons-container">
+        <ButtonGroup
+          variant="outlined" 
+          aria-label="outlined button group"
+          color="secondary"          
+        >
+          <Button size="large">One</Button>
+          <Button size="large">Two</Button>
+          <Button size="large">Three</Button>
+        </ButtonGroup>
+
+        {/*  <MyButton className="button-decrement" onClick={handleDecrement}>Decrementar</MyButton>
         <MyButton className="button-increment" onClick={handleIncrement}>Incrementar</MyButton>
         <MyButton className="button-reset"onClick={(event) => setCounter(100)}>Reset</MyButton>
+       */}
       </div>
     </>
   );
