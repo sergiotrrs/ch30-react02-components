@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { MyButton } from '../button/my-button';
 
 export const Counter = () => {
   console.log("Estoy dentro del componente Counter");
@@ -27,9 +28,13 @@ export const Counter = () => {
   return (
     <>
       <p>Contador: {counterValue}</p>
-      <button onClick={ handleDecrement } > Decrementar</button>
+      <MyButton onClick={ handleDecrement } >Decrementar</MyButton>
+      <MyButton onClick={ handleIncrement } >Incrementar</MyButton>
+      <MyButton onClick={ (event) => setCounter( 100  ) }>Reset</MyButton>
+
+      {/* <button onClick={ handleDecrement } > Decrementar</button>
       <button onClick={ handleIncrement } > Incrementar</button>
-      <button onClick={ (event) => setCounter( 100  ) } > Reset</button>
+      <button onClick={ (event) => setCounter( 100  ) } > Reset</button> */}
      
     </>
   );
