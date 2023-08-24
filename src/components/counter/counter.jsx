@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MyButton } from '../button/my-button';
+
+let maxValue = 0;
 
 export const Counter = () => {
   console.log("Estoy dentro del componente Counter");
@@ -23,6 +25,15 @@ export const Counter = () => {
     setCounter( counterValue - 1  );
     console.log("Contador" + counterValue)
   }
+
+  if ( counterValue === 90 )
+    maxValue = 90;
+ 
+
+  useEffect(() => {
+    console.log(`Estoy dentro del useEffect de button`);
+    console.log("Has llegado al máximo valor");
+  }, [maxValue] );
 
   return (
     <>
