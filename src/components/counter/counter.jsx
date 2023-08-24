@@ -7,7 +7,6 @@ export const Counter = () => {
  //  hook useSate
  // useState permite a los componentes gestionar su propio estado.
  // const [ value, setValue  ] = useSate( initialValue );
- 
  const [ counterValue, setCounter  ] = useState( 100 );
 
 
@@ -31,10 +30,6 @@ export const Counter = () => {
       <MyButton onClick={ handleDecrement } >Decrementar</MyButton>
       <MyButton onClick={ handleIncrement } >Incrementar</MyButton>
       <MyButton onClick={ (event) => setCounter( 100  ) }>Reset</MyButton>
-
-      {/* <button onClick={ handleDecrement } > Decrementar</button>
-      <button onClick={ handleIncrement } > Incrementar</button>
-      <button onClick={ (event) => setCounter( 100  ) } > Reset</button> */}
      
     </>
   );
