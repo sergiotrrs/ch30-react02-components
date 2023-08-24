@@ -5,6 +5,8 @@ const buttonStyle = {
   fontFamily: "verdana",
   fontSize: 18,
 };
+// Se puede llamar un hoja JSON->obj.
+// JSON styling.
 
 const resetStyle = {
   color: "green",
@@ -12,7 +14,7 @@ const resetStyle = {
   fontSize: 24,
 };
 
-export const MyButton = ({ onClick: handleOnClick, children }) => {
+export const MyButton = ({ onClick: handleOnClick, children, className }) => {
   console.log(`Estoy dentro del componente button de ${children}`);
 
   /*
@@ -35,12 +37,14 @@ export const MyButton = ({ onClick: handleOnClick, children }) => {
 
   return (
     <>
-      <button
-        onClick={handleOnClick}
-        style= {children === "Reset" ? resetStyle : buttonStyle}
-      >
-        {children}
-      </button>
+      <div className={className}>
+        <button
+          onClick={handleOnClick}
+          style={children === "Reset" ? resetStyle : buttonStyle}
+        >
+          {children}
+        </button>
+      </div>
     </>
   );
 };

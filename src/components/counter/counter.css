@@ -1,0 +1,35 @@
+
+.buttons-container {
+    margin: 3px;
+    border: 2px solid green;
+}
+
+.title-counter {
+    font-size: 26px;
+    font-weight: "bold";
+    color: purple;
+    padding: 20px;
+
+}
+
+.button-increment {
+    border: 2px solid purple;
+    padding: 5px;
+    background-color: rgb(207, 131, 207);
+    border-radius: 10px;    
+}
+
+
+.button-decrement {
+    border: 2px solid rgb(32, 0, 128);
+    padding: 5px;
+    background-color: rgb(131, 196, 207);
+    border-radius: 10px;    
+}
+
+.button-reset {
+    border: 2px solid rgb(128, 28, 0);
+    padding: 5px;
+    background-color: rgb(226, 179, 153);
+    border-radius: 10px;    
+}
