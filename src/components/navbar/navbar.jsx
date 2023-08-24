@@ -1,12 +1,11 @@
+import { Link } from "react-router-dom";
 // snippet traido como rafc
 
 //const pages = [ "Home", "Users", "About", "Register" ];
 const pages = [ 
    { name: "Home",  url: "/"} ,
-   { name: "Users",  url: "/"} ,
-   { name: "Counter",  url: "/"} ,
-   { name: "About",  url: "/"},
-   { name: "Register",  url: "/"}
+   { name: "Generation",  url: "/generation"} ,
+   { name: "Counter",  url: "/counter"} ,
 ];
 
 /*
@@ -23,7 +22,10 @@ const Navbar = () => {
     <>
         <h4>CH30</h4>
         <ul>
-            { pages.map( page => <li key={page.name}>{page.name}</li>  ) }
+            { pages.map( page => 
+            <li key={page.name}>
+             <Link to={page.url} >{page.name}</Link>  
+            </li>  ) }
         </ul>
     </>
   )
