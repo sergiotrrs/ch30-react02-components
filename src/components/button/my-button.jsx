@@ -14,14 +14,16 @@ export const MyButton = ({ onClick: handleOnClick, children }) => {
 
     */
   const maxValue = 0;
-  
+
+  useEffect(() => console.log(new Date().toString()), []);
+
   useEffect(() => {
     console.log(`Estoy dentro del useEffect de ${children}`);
-  }, [] );
+  }, []);
 
   return (
     <>
-      <button onClick={handleOnClick}>{children}</button>
+      <button onClick={handleOnClick} style= { {color:"red", fontFamily:"verdana", fontSize:18  }  }  >{children}</button>
     </>
   );
 };
