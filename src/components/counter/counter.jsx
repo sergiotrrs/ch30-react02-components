@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { MyButton } from '../button/my-button';
+import './counter.css';
 
 let maxValue = 0;
 
